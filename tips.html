@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}Cultivation Tips | BIOSCAN{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>🌱 Cultivation Tips</h2>
+    <p>Improve crop health and yield with these practical tips.</p>
+</div>
+
+    <div class="tips-grid">
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='soilpreparation.jpg') }}">
+            <h3>Soil Preparation</h3>
+            <p>Test soil quality before planting. Add organic compost for better nutrients.</p>
+        </div>
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='irrigation.jpg') }}">
+            <h3>Proper Irrigation</h3>
+            <p>Water crops early morning or evening to reduce evaporation loss.</p>
+        </div>
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='fertilizerusage.jpg') }}">
+            <h3>Fertilizer Usage</h3>
+            <p>Use balanced NPK fertilizers based on crop growth stage.</p>
+        </div>
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='pestcontrol.jpg') }}">
+            <h3>Pest Control</h3>
+            <p>Use neem oil or organic pesticides to control pests naturally.</p>
+        </div>
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='rotation.jpg') }}">
+            <h3>Crop Rotation</h3>
+            <p>Rotate crops every season to maintain soil fertility.</p>
+        </div>
+
+        <div class="tip-card">
+            <img src="{{ url_for('static', filename='harvesting.jpg') }}">
+            <h3>Harvesting</h3>
+            <p>Harvest crops at the right maturity stage for best yield.</p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
